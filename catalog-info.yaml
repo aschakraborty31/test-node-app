@@ -1,11 +1,6 @@
-apiVersion: backstage.io/v1alpha1
-kind: Component
-metadata:
-  name: john-doe
-  description: A user entity
-  tags:
-    - user
+kind: User
 spec:
-  type: user
-  lifecycle: production
-  owner: team-name
+  profile:
+    displayName: John Doe
+    email: john.doe@example.com
+  memberOf: [team-name]
